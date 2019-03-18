@@ -1,11 +1,12 @@
 <template lang='pug'>
-  div.container
-    code-editor
-    //-registers
+div.container
+  //-address
+  code-editor
+  //-registers
 </template>
 
 <script>
-import CodeEditor from '../components/code-editor';
+import CodeEditor from '~/components/code-editor';
 
 export default {
   components: {

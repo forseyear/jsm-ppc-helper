@@ -1,4 +1,6 @@
 <template lang='pug'>
+div.app
+  address-box
   monaco-editor.editor(v-model="code" theme="vs-dark")
 </template>
 
