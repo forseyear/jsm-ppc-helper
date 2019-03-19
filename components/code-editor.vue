@@ -1,7 +1,6 @@
 <template lang='pug'>
-div.app
-  address-box
-  monaco-editor.editor(v-model="code" theme="vs-dark")
+  div.editor-container
+    monaco-editor.editor(v-model="code" theme="vs-dark")
 </template>
 
 <script>
@@ -15,12 +14,12 @@ export default {
   data() {
     return {
       code: Config.code
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang='stylus'>
+<style lang='stylus' scoped>
 div.editor
   width 300px
   height 500px
