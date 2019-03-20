@@ -1,0 +1,16 @@
+{
+  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "target": "es2015",
+    "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "experimentalDecorators": true,
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-standard"
+  ],
+  "rules": {
+    "class-name": false,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "prefer-const": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "space-before-function-paren": [
+      false,
+      "never"
+    ],
+    "trailing-comma": [
+      false,
+      {
+        "multiline": "always",
+        "singleline": "always"
+      }
+    ],
+    "type-literal-delimiter": true,
+    "variable-name": [
+      true,
+      "always",
+      "ban-keywords"
+    ]
+  }
+}
