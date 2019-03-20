@@ -12,6 +12,8 @@
 <script>
 import Register from '~/components/register';
 
+import Add from '~/asm/add';
+import TypeClasses from '~/type-classes';
 export default {
   components: {
     Register
@@ -52,6 +54,12 @@ export default {
         { name: 'r31', value: '00000000' }
       ],
     };
+  },
+  mounted() {
+    const R = new TypeClasses.register(this.registers[0].value);
+    Add.addi(R, new TypeClasses.register(23), new TypeClasses.register(34));
+    this.registers[0].value = `${R.get()}`;
+    console.log(R.get());
   }
 };
 </script>

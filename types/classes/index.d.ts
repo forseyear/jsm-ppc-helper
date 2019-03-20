@@ -52,5 +52,5 @@ declare global {
   class uShort extends uInt16 {}
   class Int extends Int32 {}
   class uInt extends uInt32 {}
-  class register extends uInt {}
+  class register extends uInt32 {}
 }
